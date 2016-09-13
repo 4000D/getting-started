@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>M.E.A.N. Todo App with Angular 2.0</title>
+    <link rel="stylesheet" href="vendor/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="/vendor/dist/es6-shim.js"></script>
+
+    <!-- 1. Load libraries -->
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+    <script>
+          System.import('app').catch(function(err){ console.error(err); });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <my-app>
+        <h2 class="text-center">Loading A M.E.A.N. Todo App...</h2>
+      </my-app>
+    </div>
+    <script>
+      // Rewrite the paths to load the files
+      /*
+      System.paths = {
+      'angular2/*': '/vendor/angular2/*.js', // Angular
+      'rtts_assert/*': '/vendor/rtts_assert/*.js', // Runtime assertions
+      'rx/*': '/vendor/node_modules/rx/*.js',
+      'todo-app': 'components/todo-app/todo-app.es6', // The todo-app component
+      'xhr-factory': 'services/xhr-factory.es6', // The todo-factory Service
+      'todos-factory': 'services/todos-factory.es6' // The todo-factory Service
+      };
+      // Kick off the todo-application
+      System.import('todo-app');
+      */
+    </script>
+  </body>
+</html>

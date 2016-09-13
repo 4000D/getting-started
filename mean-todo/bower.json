@@ -1,0 +1,20 @@
+{
+  "name": "mean-todo",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "4000D <dkdkajej@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/4000D/getting-started",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
