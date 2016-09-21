@@ -1,8 +1,14 @@
 import React, { Component, PropTypes } from 'react';
-import render from 'react-dom';
-import logo from './logo.svg';
-import './App.css';
+import { render } from 'react-dom';
 import 'whatwg-fetch';
+
+class App extends Component{
+  render() {
+    return (
+      <ContactsAppContainer />
+    );
+  }
+}
 
 class ContactsAppContainer extends Component {
   constructor() {
@@ -110,4 +116,4 @@ ContactItem.propTypes = {
 }
 
 
-export default ContactsAppContainer;
+render(<App />, document.getElementById('root'));

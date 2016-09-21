@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ContactsAppContainer from './App';
+import App from './App';
 import './index.css';
 
-
 ReactDOM.render(
-  <ContactsAppContainer />,
+  <App />,
   document.getElementById('root')
 );
